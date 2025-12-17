@@ -57,3 +57,13 @@ def get_admin_user_ids() -> list[int]:
         return [int(admin.strip()) for admin in admin_list]
     except KeyError as e:
         raise KeyError("ADMIN_USER_ID environment variable not set")
+
+def get_gemini_model() -> str:
+    """Retrieves the GEMINI_MODEL from environment variables.
+    
+    If not set, defaults to a safe standard model.
+
+    Returns:
+        str: The value of the GEMINI_MODEL environment variable or default.
+    """
+    return os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
