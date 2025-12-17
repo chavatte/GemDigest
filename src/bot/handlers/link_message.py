@@ -25,31 +25,30 @@ from ..bot_utils import message_markup
 class ErrorMessages(Enum):
     """Contains error messages for the link message handler."""
     NO_VALID_URLS_MESSAGE = (
-        "Oops\\! 🤖 I couldn't find any valid URLs in your message\\." 
-        "📭 Drop a link and let me work my magic\\! ✨"
+        "Ops\\! 🤖 Não encontrei nenhuma URL válida na sua mensagem\\." 
+        "📭 Mande um link e deixe a mágica acontecer\\! ✨"
     )
 
     CANNOT_CRAWL_MESSAGE = (
-        "Oops\\! 🕵️‍♂️ Our little web\\-sleuth tripped over a broken link\\! "
-        "We'll get back on track soon\\! 🌐💥"
+        "Ops\\! 🕵️‍♂️ Nosso detetive da web tropeçou num link quebrado\\! "
+        "Tente outro link ou verifique se o site está no ar\\! 🌐💥"
     )
 
     GEMINI_API_FAIL_REASON_MESSAGE = (
-        "Yikes\\! 🚨 Gemini stopped because: _{reason}_\n"
-        "Looks like something spooked it\\! 😬"
-        "Let's keep it friendly and try again\\! 😊"
+        "Eita\\! 🚨 O Gemini parou porque: _{reason}_\n"
+        "Parece que algo assustou ele\\! 😬 "
+        "Vamos tentar de novo com calma\\! 😊"
     )
 
     GEMINI_API_FAIL_MESSAGE = (
-        "Uh\\-oh\\! 🚧 Gemini's gone silent for unknown reasons\\… "
-        "Maybe the stars are misaligned\\? 🌠 Let's try again\\!"
+        "Uh\\-oh\\! 🚧 O Gemini ficou mudo por motivos desconhecidos\\… "
+        "Talvez os astros estejam desalinhados\\? 🌠 Vamos tentar de novo\\!"
     )
 
     NO_LINK_MESSAGE = (
-        "Oops\\! 🤖 It looks like there's no link in your message\\." 
-        "📭 Drop a link and let me work my magic\\! ✨"
+        "Ops\\! 🤖 Parece que não tem nenhum link na sua mensagem\\." 
+        "📭 Mande um link e deixe a mágica acontecer\\! ✨"
     )
-
     def format(self, *args, **kwargs) -> str:
         """Formats the error message with the given arguments."""
         return self.value.format(*args, **kwargs)
