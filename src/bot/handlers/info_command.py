@@ -55,13 +55,13 @@ async def handle_info_command(message: Message, bot: AsyncTeleBot) -> None:
         model_info.temperature)
     
     response_message = (
-        "Here's the scoop on my current settings\\! 🧠✨\n\n"
-        f"\\- Model: `{_model_name}` 🤖\n"
-        f"\\- Temperature: *{_temperature}* 🌡️ \\(spiciness level\\!\\)\n"
-        f"\\- Top P: *{_top_p}* 🎯 \\(sampling probability\\)\n"
-        f"\\- Top K: *{model_info.top_k}* 🎰 \\(number of options considered\\)\n"
-        f"\\- Max output tokens: *{model_info.max_output_tokens}* 🚀 \\(how much I can say in one go\\!\\)\n\n"
-        "Tuned and ready for action\\! ⚡"
+        "Aqui estão os detalhes das minhas configurações atuais\\! 🧠✨\n\n"
+        f"\\- Modelo: `{_model_name}` 🤖\n"
+        f"\\- Temperatura: *{_temperature}* 🌡️ \\(nível de ousadia\\!\\)\n"
+        f"\\- Top P: *{_top_p}* 🎯 \\(probabilidade de amostragem\\)\n"
+        f"\\- Top K: *{model_info.top_k}* 🎰 \\(número de opções consideradas\\)\n"
+        f"\\- Máx tokens de saída: *{model_info.max_output_tokens}* 🚀 \\(o quanto consigo falar de uma vez\\!\\)\n\n"
+        "Calibrado e pronto para a ação\\! ⚡"
     )
 
     await bot.send_message(
