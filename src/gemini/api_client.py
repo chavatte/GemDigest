@@ -89,7 +89,9 @@ class GeminiAPIClient():
             response_mime_type="application/json",
         )
 
-        model_name = "gemini-1.5-flash-002"
+        # OLD: model_name = "gemini-1.5-flash-002"
+        # NEW: Fetch from environment variable
+        model_name = api_keys.get_gemini_model()
 
         self.model_info = GeminiModelInfo(
             model_name=model_name,
