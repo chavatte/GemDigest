@@ -18,13 +18,13 @@ async def handle_chat_join(
         return await bot.leave_chat(chat_member_updated.chat.id)
 
     chat_join_message = (
-        "👋 Hey everyone\\!\n"
-        "I'm *GemDigest* 🤖, your handy bot for turning long articles "
-        "into bite\\-sized summaries\\. Just share a link to an article, "
-        "and I'll bring you the highlights in no time\\! 📰✨\n\n"
-        "Need more info? Type /help to see all the ways I can assist you\\. "
-        "Let me help you save time and get straight to the point\\. 🎯\n"
-        "Drop a link, and let's get started\\! 📝🔗"
+        "👋 Olá pessoal\\!\n"
+        "Eu sou o *GemDigest* 🤖, seu bot prático para transformar artigos longos "
+        "em resumos rápidos\\. Basta compartilhar um link de um artigo, "
+        "e eu trarei os destaques num piscar de olhos\\! 📰✨\n\n"
+        "Precisa de mais informações? Digite /help para ver como posso ajudar\\. "
+        "Deixe-me ajudar a economizar tempo e ir direto ao ponto\\. 🎯\n"
+        "Mande um link e vamos começar\\! 📝🔗"
     )
 
     # is one of "member", "administrator" or "left"
@@ -48,13 +48,13 @@ async def handle_member_joined(
     user_name = chat_member_updated.new_chat_member.user.username
 
     chat_join_message = (
-        f"👋 Welcome, {user_name}\\!\n"
-        "I'm GemDigest, the bot here to help you stay on top "
-        "of the latest articles without all the reading\\! 📚✨ "
-        "Just share a link, and I'll send you a quick summary\\.\n\n"
-        "Need more info? Type /help to see all the ways I can assist you\\. "
-        "Looking forward to saving you some time\\! "
-        "Drop a link anytime you want the scoop\\. 📰🔗"
+        f"👋 Bem\\-vindo(a), {user_name}\\!\n"
+        "Eu sou o GemDigest, o bot aqui para te ajudar a ficar por dentro "
+        "dos últimos artigos sem precisar ler tudo\\! 📚✨ "
+        "Basta compartilhar um link e eu te envio um resumo rápido\\.\n\n"
+        "Precisa de mais informações? Digite /help para ver como posso ajudar\\. "
+        "Ansioso para te fazer economizar tempo\\! "
+        "Mande um link sempre que quiser um resumo\\. 📰🔗"
     )
 
     # is one of "member", "administrator" or "left"

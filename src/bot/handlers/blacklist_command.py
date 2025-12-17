@@ -14,13 +14,13 @@ _formatted_blacklisted_urls = [
 async def handle_blacklist_command(message: Message, bot: AsyncTeleBot) -> None:
 
     blacklist_message = (
-        "🚫 _Blacklist Incoming\\!_ 🚫\n"
-        "These are the tricky sites that the bot won't scrape "
-        "\\(no sneaky data here\\!\\) 🕵️‍♂️❌:\n\n"
+        "🚫 _Blacklist na Área\\!_ 🚫\n"
+        "Estes são os sites complicados que o bot não vai acessar "
+        "\\(nada de espiar por aqui\\!\\) 🕵️‍♂️❌:\n\n"
         f"{''.join(_formatted_blacklisted_urls)}"
         "\n"
-        "_The bot knows where not to go\\! Safe and sound, avoiding the "
-        "web's no\\-go zones\\!_ 🕸️💨"
+        "_O bot sabe onde não deve ir\\! Navegando com segurança "
+        "e evitando as zonas proibidas da web\\!_ 🕸️💨"
     )
 
     await bot.send_message(

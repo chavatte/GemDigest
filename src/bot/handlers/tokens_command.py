@@ -42,12 +42,12 @@ async def handle_tokens_command(message: Message, bot: AsyncTeleBot) -> None:
     )
     
     response_message = (
-        "Here's the token breakdown\\! 🧮✨\n\n"
-        f"\\- Last input: *{token_count.last_input_token_count}* tokens 📝\n"
-        f"\\- Last output: *{token_count.last_output_token_count}* tokens 🗣️\n"
-        f"\\- Total input: *{token_count.total_input_token_count}* tokens 💻\n"
-        f"\\- Total output: *{token_count.total_output_token_count}* tokens 🔊\n"
-        f"\\- Total tokens used: *{total_tokens_used}* tokens 🚀\n"
+        "Aqui está o relatório de tokens\\! 🧮✨\n\n"
+        f"\\- Última entrada: *{token_count.last_input_token_count}* tokens 📝\n"
+        f"\\- Última saída: *{token_count.last_output_token_count}* tokens 🗣️\n"
+        f"\\- Total entrada: *{token_count.total_input_token_count}* tokens 💻\n"
+        f"\\- Total saída: *{token_count.total_output_token_count}* tokens 🔊\n"
+        f"\\- Total usado: *{total_tokens_used}* tokens 🚀\n"
     )
 
     await bot.send_message(

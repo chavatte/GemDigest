@@ -35,12 +35,10 @@ async def handle_start_command(message: Message, bot: AsyncTeleBot) -> None:
     """
 
     start_message = (
-        f"Hey {message.from_user.first_name}\\!👋\n"
-        "I'm *GemDigest*, your friendly bot 🤖, here to help you summarize "
-        "links, articles, and more\\! 🔗✨ "
-        "Just send a link or use /help to see all the cool things "
-        "I can do\\! \n"
-        "Let's get started\\! 🚀")
+        f"Olá {message.from_user.first_name}\\! 👋\n"
+        "Eu sou o *GemDigest*, seu bot de resumos com IA 🤖\\! \n"
+        "Me mande qualquer link e eu resumo para você em PT\\-BR\\! 🔗✨\n"
+        "Vamos começar\\! 🚀")
 
     await bot.send_message(
         message.chat.id,
